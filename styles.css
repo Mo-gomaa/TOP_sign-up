@@ -1,0 +1,273 @@
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.right-header h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h3.h3-sign-up {
+  margin-top: 30px;
+}
+
+img[src="background.jpeg"] {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 250, 251);
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  position: relative;
+  max-width: 30vw;
+}
+
+img[src="sr-high-resolution-logo-black-transparent.png"] {
+  position: absolute;
+  max-width: 27vw;
+  top: 39%;
+  left: 15px;
+}
+
+span.photo-credit {
+  position: absolute;
+  top: 98%;
+  color: rgb(250, 250, 251);
+  font-size: 0.6em;
+  font-weight: lighter;
+  z-index: 1;
+}
+
+.photo-credit a {
+  color: rgb(250, 250, 251);
+  cursor: pointer;
+}
+
+.right-header {
+  height: 320px;
+  background-color: rgb(250, 250, 251);
+  padding-top: 150px;
+  padding-right: 200px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+.right-body {
+  padding: 20px 200px 20px 40px;
+  background-color: white;
+}
+
+.right-footer {
+  background-color: rgb(250, 250, 251);
+  height: 368px;
+  padding: 20px 300px 20px 40px;
+}
+
+form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+input:focus {
+  outline: none;
+  border-radius: 2px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 20px;
+  z-index: 1;
+}
+
+label {
+  font-size: 0.7rem;
+}
+
+label input {
+  width: 190px;
+}
+
+button {
+  height: 40px;
+  width: 180px;
+  margin-bottom: 25px;
+  background-color: rgb(83 136 120);
+  color: rgb(250, 250, 251);
+  border: 0;
+  border-radius: 5px;
+  text-shadow: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  box-shadow: 0px 1px 5px 1px rgb(144 173 159);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+  align-items: center;
+  background-color: rgb(250, 250, 251);
+}
+
+footer > a > img {
+  height: 2em;
+  margin-left: 10px;
+}
+
+#row2,
+#row3 {
+  margin-left: 10px;
+}
+
+@media (max-width: 700px), (max-height: 659px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .left-side {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    width: 100vw;
+    height: 250px;
+  }
+
+  img[src="background.jpeg"] {
+    min-width: 94.9vw;
+    min-height: 1005px;
+    transform: scale(1.108);
+  }
+
+  img[src="sr-high-resolution-logo-black-transparent.png"] {
+    position: absolute;
+    left: 37vw;
+    max-height: 70px;
+    transform: scale(2);
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-header {
+    padding: 30px 20px;
+    max-height: 175px;
+    text-align: center;
+  }
+
+  span.photo-credit {
+    position: absolute;
+    width: 100vw;
+    top: 94.5%;
+  }
+
+  .right-body {
+    min-height: 330px;
+  }
+
+  #email,
+  #lname,
+  #pwd,
+  #phone,
+  #confirm-pwd {
+    position: absolute;
+  }
+
+  #lname {
+    top: 60px;
+  }
+
+  #phone {
+    top: 100px;
+  }
+
+  #email {
+    top: 140px;
+  }
+
+  #pwd {
+    top: 180px;
+  }
+
+  #confirm-pwd {
+    top: 220px;
+  }
+
+  .title label {
+    bottom: 9px;
+  }
+
+  label[for="fname"] {
+    bottom: 19px;
+  }
+
+  form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: right;
+    width: fit-content;
+  }
+
+  form label {
+    position: absolute;
+    left: 3px;
+    font-size: 7px;
+    margin-top: 2px;
+    width: 121px;
+    text-align: left;
+  }
+
+  form input {
+    width: 88vw;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: left;
+  }
+
+  .right-footer {
+    height: 270px;
+  }
+
+  .right-footer > p {
+    width: 90vw;
+  }
+
+  #row2,
+  #row3 {
+    margin-left: 0px;
+  }
+}

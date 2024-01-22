@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Sign-up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <img src="background.jpeg" alt="" srcset="" />
+        <div class="logo">
+          <img src="sr-high-resolution-logo-black-transparent.png" alt="" />
+        </div>
+        <span class="photo-credit"
+          >Photo by
+          <a href="https://unsplash.com/@anniespratt">Annie Spratt</a> on
+          <a href="https://unsplash.com/">Unsplash</a></span
+        >
+      </div>
+      <div class="right-side">
+        <div class="right-header">
+          <div>
+            <h3>
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+            </h3>
+            <h3>Sign up <em>now</em> to get started.</h3>
+
+            <h3 class="h3-sign-up">You <em>know</em> you want to.</h3>
+          </div>
+        </div>
+
+        <div class="right-body">
+          <h2>Let's do this!</h2>
+          <form action="" method="get" id="a-form">
+            <div class="row">
+              <div class="title">
+                <label for="fname">FIRST NAME</label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="fname"
+                  required
+                  tabindex="1"
+                />
+              </div>
+              <div class="title" id="email">
+                <label for="email">EMAIL</label>
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  tabindex="4"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row" id="row2">
+              <div class="title" id="lname">
+                <label for="lname">LAST NAME</label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="lname"
+                  tabindex="2"
+                  required
+                />
+              </div>
+              <div class="title" id="pwd">
+                <label for="pwd">PASSWORD</label>
+              </div>
+              <div>
+                <input
+                  type="password"
+                  name="password"
+                  id="pwd"
+                  tabindex="5"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row" id="row3">
+              <div class="title" id="phone">
+                <label for="phone">PHONE NUMBER</label>
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  tabindex="3"
+                  required
+                />
+              </div>
+
+              <div class="title" id="confirm-pwd">
+                <label for="confirm-pwd">CONFIRM PASSWORD</label>
+              </div>
+
+              <div>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-pwd"
+                  tabindex="6"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="right-footer">
+          <button type="submit" form="a-form">CREATE ACCOUNT</button>
+          <p>
+            Already have an account? <a href="http://google.com">Log in </a>
+          </p>
+        </div>
+        <div>
+          <footer>
+            Copyright &#169;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Sagun Rajbhandari
+            <a href="https://github.com/sagun-r"
+              ><img src="github-mark.png" alt="Github profile"
+            /></a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
